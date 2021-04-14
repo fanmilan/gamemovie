@@ -21,8 +21,8 @@ DEMO : https://gamemovie.pishchulin.site
 <div>
     <h2>Скриншоты</h2>
     <div class="image-wrap">
-        <img src="https://pishchulin.site/img/gamemovie/Screenshot_2.png"/>
-        <img src="https://pishchulin.site/img/gamemovie/Screenshot_3.png"/>
+        <img src="https://pishchulin.site/img/gamemovie/Screenshot_2.png" width='300px' />
+        <img src="https://pishchulin.site/img/gamemovie/Screenshot_3.png" width='300px' />
     </div>
 </div>
 <div>
