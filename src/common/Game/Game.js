@@ -1,7 +1,7 @@
 import './Game.scss';
 import {TopBar} from '../TopBar/TopBar';
 import {Question} from "../Question/Question";
-import {Answers} from "../../components/Answers/Answers";
+import {Answers} from "../Answers/Answers";
 import {checkQuestion, takeLifeline} from "../../api/movieAPI";
 import {PosterQuestion} from "../../components/PosterQuestion/PosterQuestion";
 import {GameOver} from "../GameOver/GameOver";

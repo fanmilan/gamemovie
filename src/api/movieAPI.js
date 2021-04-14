@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-//const url = 'https://gamemovie.ru/api/game';
-//const url = 'http://localhost:8000/api/games/dsdsds';
-const url = 'http://localhost:8000/api/games/';
+const url = 'http://gamemovie.ru/api/games/';
+//const url = 'http://localhost:8000/api/games/';
 
 
 export const startGame = (game_code) => {

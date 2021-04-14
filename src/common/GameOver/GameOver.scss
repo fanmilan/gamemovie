@@ -38,3 +38,38 @@
     color: white;
   }
 }
+
+.best-scores {
+  width: 100%;
+  padding: 20px;
+
+  &__table {
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 100%;
+    border-radius: 25px;
+    color: white;
+    border-spacing: 0;
+    border: 1px solid #616161;
+
+    thead {
+      background: #5d5d5d;
+      height: 40px;
+
+      font-weight: bold;
+    }
+
+    tr {
+
+    }
+
+    td {
+      height: 40px;
+      vertical-align: middle;
+      text-align: center;
+      border: 0;
+      padding: 10px;
+
+    }
+  }
+}

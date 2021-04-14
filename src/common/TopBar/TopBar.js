@@ -1,4 +1,4 @@
-import {Lifelines} from "../Lifelines";
+import {Lifelines} from "../Lifelines/Lifelines";
 
 export function TopBar({points, lives, lifelines, handleClickLifeline}) {
     return <div className={'game__top-bar'}>
