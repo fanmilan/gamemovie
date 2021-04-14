@@ -1,0 +1,26 @@
+.poster-question{
+  height: 100%;
+  position: relative;
+  cursor:zoom-in;
+  width:100%;
+
+  &.fullscreen-image{
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor:zoom-out;
+  }
+
+  &__image {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+.page{
+  background: linear-gradient(180deg, white 30%, #2ba2f6 100%);
+
+  &__inside {
+    height: 100vh;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

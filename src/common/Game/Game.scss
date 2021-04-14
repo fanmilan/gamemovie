@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+.game {
+  height:100%;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  /*
+
+  ============ TOP BAR ============
+
+  */
+
+  &__top-bar {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__points-block {
+    width: 60px;
+    border-radius: 0 0 50px 50px;
+    height: 100%;
+    background: #515151;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__lives-block {
+    display: flex;
+    height: 100%;
+    width: 3 * 45px;
+    justify-content: flex-end;
+  }
+
+  &__life {
+    height: 100%;
+    width: 45px;
+    background:red;
+    background: url('../../icons/guess-poster/life-icon.png') 50% 50% no-repeat;
+    background-size: cover;
+  }
+
+  &__lifelines {
+    display: flex;
+
+    height: 100%;
+    width: 3 * 45px;
+  }
+
+  &__lifeline {
+    height: 100%;
+    width: 45px;
+    cursor: pointer;
+
+    &_skip {
+      background: url('../../icons/guess-poster/skip.png') 50% 50% no-repeat;
+      background-size: cover;
+    }
+
+    &_fifty {
+      background: url('../../icons/guess-poster/tint_half.png') 50% 50% no-repeat;
+      background-size: cover;
+    }
+
+    &_doubledip {
+      background: url('../../icons/guess-poster/doubledip.png') 50% 50% no-repeat;
+      background-size: cover;
+    }
+  }
+
+  /*
+
+  ============ END TOP BAR ============
+
+  */
+
+  &__question{
+    height: calc(100% - 440px);
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-height: 800px) {
+      height: calc(100% - 340px);
+    }
+  }
+
+
+  &__answer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+    margin: 20px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+
+    @media screen and (max-height: 800px) {
+      height: 50px;
+      margin: 10px 0;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    &.correct {
+      background: #66CDAA;
+    }
+
+    &.wrong {
+      background: #D9223A;
+    }
+  }
+}
